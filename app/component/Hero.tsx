@@ -43,7 +43,7 @@ const Hero = () => {
        Welcome to where Imagination meets Functionality, <span className='text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-500 to-purple-300 text-base md:text-xl'>Let's elevate your brand together through Innovative Design and Development.</span> 
        </p>
 
-       <div className="flex ">
+       <div className="flex gap-4 md:gap-0 ">
 
 
         <Link href="/contact" >
@@ -66,7 +66,7 @@ const Hero = () => {
        </div>
       </div>
 
-      <div className="col-span-5 place-self-center mt-4 lg:mt-0 ">
+      <div className="col-span-5 place-self-center md:mt-4 mt-8 lg:mt-0 ">
        <div className="rounded-full bg-[#181818] relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] ">
        <Image className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src={Profile} alt={'profile-Image'} width={250} height={300}></Image>
        </div>
