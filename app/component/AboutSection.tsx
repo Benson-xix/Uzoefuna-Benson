@@ -9,7 +9,7 @@ const TAB_DATA = [
         title: "Skills",
         id: "skills",
         content: (
-            <ul className="grid grid-cols-3 gap-5 list-disc pl-3">
+            <ul className="grid sm:grid-cols-3 grid-cols-2  gap-5 list-disc pl-3">
                 <li>Javascript</li>
                 <li>Node.js</li>
                 <li>Rust</li>
