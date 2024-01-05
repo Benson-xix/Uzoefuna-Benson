@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Uzoefuna Benson',
   description: 'A Portfolio Web-App for Uzoefuna Benson',
-  keywords: ["Development", "Web", "Software Development", "Programming" , "Work", "Skill"]
+  keywords: ["Development", "Web", "Software Development", "Programming" , "Benson", "Uzoefuna", "chijioke", "tech","javascript" "Work", "Skill"]
 }
 
   export default function RootLayout({
