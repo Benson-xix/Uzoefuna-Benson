@@ -27,7 +27,7 @@ const SkillComponent = () => {
         }}
         speed={5000}
         modules={[Autoplay]}
-        className="md:max-w-[100%] max-w-[80%]  "
+        className="md:max-w-[100%] max-w-[80%] md:block hidden "
         >
             {SkillData.map((skill, index) => (
                 <SwiperSlide key={index} >
@@ -41,7 +41,29 @@ const SkillComponent = () => {
                 </SwiperSlide>
             ))}
         </Swiper>
-
+         <Swiper
+        slidesPerView={3}
+        loop={true}
+        autoplay={{
+            delay:0,
+            disableOnInteraction: false
+        }}
+        speed={5000}
+        modules={[Autoplay]}
+        className="md:max-w-[100%] max-w-[80%] md:hidden block"
+        >
+            {SkillData.map((skill, index) => (
+                <SwiperSlide key={index} >
+                   <Image 
+                   src={skill.Image}
+                   alt={skill.name}
+                   width={skill.width}
+                   height={skill.height}
+                    />
+                <p className='text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-500 to-black hidden md:flex   '>{skill.name}</p>
+                </SwiperSlide>
+            ))}
+        </Swiper>
         <Swiper
         slidesPerView={5}
         loop={true}
@@ -52,7 +74,31 @@ const SkillComponent = () => {
         }}
         speed={5000}
         modules={[Autoplay]}
-        className="md:max-w-[100%] max-w-[80%] "
+        className="md:max-w-[100%] max-w-[80%] md:block hidden"
+        >
+            {SkillData.map((skill, index) => (
+                <SwiperSlide key={index}>
+                   <Image 
+                   src={skill.Image}
+                   alt={skill.name}
+                   width={skill.width}
+                   height={skill.height}
+                    />
+                    <p className='text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-500 to-black hidden md:flex'>{skill.name}</p>
+                </SwiperSlide>
+            ))}
+        </Swiper>
+          <Swiper
+        slidesPerView={3}
+        loop={true}
+        autoplay={{
+            delay:0,
+            disableOnInteraction: false,
+            reverseDirection: true
+        }}
+        speed={5000}
+        modules={[Autoplay]}
+        className="md:max-w-[100%] max-w-[80%] md:hidden block"
         >
             {SkillData.map((skill, index) => (
                 <SwiperSlide key={index}>
