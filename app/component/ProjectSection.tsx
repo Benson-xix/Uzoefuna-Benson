@@ -10,8 +10,8 @@ const projectsData = [
         description: 'Uzoefuna Benson Portfolio Website serves as an online showcase of Uzoefuna Benson professional journey, skills, and accomplishments as a Full-Stack Software Developer. This platform offers visitors a glimpse into Uzoefuna expertise through an elegant and interactive interface, highlighting projects, expertise in various technologies, and a comprehensive overview of skills and experiences.',
         image: "Capture11111.PNG",
         tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/"
+        gitUrl: "https://github.com/Benson-xix/Uzoefuna-Benson",
+        previewUrl: "https://uzoefuna-benson.vercel.app/"
     },
    
     {
