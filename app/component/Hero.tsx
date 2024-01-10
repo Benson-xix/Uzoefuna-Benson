@@ -52,7 +52,7 @@ const Hero = () => {
         </button>
         </Link>
 
-          <a  href="/UZOEFUNA-BENSON.pdf" download={true} className='cursor-pointer'>
+          <a  href="/Uzoefuna's Resume (1).pdf" download={true} className='cursor-pointer'>
           <span className="px-1 py-1 rounded-full  w-full sm:w-fit flex bg-gradient-to-br from-black via-orange-500 to-white text-[#121212] hover:bg-gradient-to-tr hover:from-white hover:via-orange-500 hover:to-black border-2 border-[#FFA500] hover:text-[#121212]">
             <span className=" bg-[#121212] rounded-full flex items-center gap-3 text-white px-5 py-2 hover:bg-slate-800"> 
             <p>Download CV</p> 
