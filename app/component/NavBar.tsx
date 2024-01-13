@@ -34,7 +34,9 @@ const NavBar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
     <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2 ">
-    <Link href={'/'} className="lg:text-5xl text-xl  text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-700 to-orange-500 font-semibold ">Software Developer</Link>
+<div className="bg-gradient-to-l from-orange-400 via-orange-500 to-orange-600 w-[100px] h-[100px] rounded-full border-2 border-white flex justify-center items-center py-4 ">
+  <Link href={'/'} className="lg:text-5xl text-xl  text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-700 to-white font-semibold  ">UB</Link>
+    </div>
     <div className="menu hidden md:block md:w-auto " id="navbar">
         <ul className="flex p-4 md:p-0  md:flex-row md:space-x-8 mt-8">
            {
