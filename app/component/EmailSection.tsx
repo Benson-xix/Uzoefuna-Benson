@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import GitHub from "@/public/download.png"
 import LinkedIn from "@/public/download (1).png"
+import { useRef } from "react";
 
 const EmailSection = () => {
  
- 
+ const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -34,12 +35,17 @@ const EmailSection = () => {
   
     try {
       const response = await fetch(endpoint, options);
-      const resData = await response.json();
-      console.log(resData);
-      if (resData.status === 'success') {
-        console.log('Message sent');
-        e.currentTarget.reset();
-      }
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const resData = await response.json();
+    console.log('Email sent successfully:', resData);
+  
+    if (formRef.current) {
+      formRef.current.reset();
+    }
     } catch (error) {
       console.error('Error:', error);
     }
@@ -73,7 +79,7 @@ const EmailSection = () => {
       </div>
 
       <div>
-        <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
+        <form ref={formRef}  className="flex flex-col gap-6" onSubmit={handleSubmit}>
         
         
 
