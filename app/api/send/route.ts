@@ -23,7 +23,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
   
       const data = await resend.emails.send({
         from: 'Acme <onboarding@resend.dev>',
-        to: ['uzoefunam.benson@gmail.com', email],
+        to: ['uzoefunam.benson@gmail.com'],
         subject: subject,
         reply_to: email,
         text: message,
