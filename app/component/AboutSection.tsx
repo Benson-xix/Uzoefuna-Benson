@@ -42,7 +42,7 @@ const TAB_DATA = [
         id: "certifications",
         content: (
             <ul className="list-disc pl-3">
-            <li>MERN STack Developer</li>
+            <li>MERN STACK Developer</li>
             <li>Advance Sofware Engineering (ADSE)</li>
             <li>FullStack Developer</li>
             <li>Web Developer</li>
