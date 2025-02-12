@@ -61,6 +61,8 @@ const projectsData = [
         previewUrl: "https://prime-labs.vercel.app/"
     },
 
+    
+
     {
         id: 7,
         title: 'Youtub Clone',
@@ -69,6 +71,35 @@ const projectsData = [
         tag: ["All", "Web"],
         gitUrl: "https://github.com/Benson-xix/youtub-clone",
         previewUrl: "http://youtub-clone.vercel.app/"
+    },
+
+      {
+        id: 8,
+        title: 'Frontend Crm',
+        description: 'A Frontend Crm Web Design With Interactive Tooltips, Sliders, and Responsive Components',
+        image: "CRM.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/Benson-xix/Frontend-CRM-Project",
+        previewUrl: "https://frontend-crm-project.vercel.app/"
+    },
+     {
+        id: 9,
+        title: 'Qodebyte',
+        description: 'A Web app interface for Qodebyte Digital Solutions',
+        image: "CRM.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/Benson-xix",
+        previewUrl: "https://qodebyte.com/"
+    },
+
+      {
+        id: 10,
+        title: 'Paws-and-Play-Store',
+        description: 'Am Ecomerece Web app for find shelters for varieties of Pets ',
+        image: "CRM.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/Benson-xix/Paws-and-Play-Store",
+        previewUrl: "https://paws-and-play-store.vercel.app/"
     },
 
 ]
