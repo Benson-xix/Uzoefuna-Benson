@@ -95,11 +95,21 @@ const projectsData = [
       {
         id: 10,
         title: 'Paws-and-Play-Store',
-        description: 'Am Ecomerece Web app for find shelters for varieties of Pets ',
+        description: 'An Ecomerece Web app for find shelters for varieties of Pets ',
         image: "CRM.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/Benson-xix/Paws-and-Play-Store",
         previewUrl: "https://paws-and-play-store.vercel.app/"
+    },
+
+      {
+        id: 11,
+        title: 'Primelabs digital temeplate app',
+        description: 'A Digital Asset  Web app to sell templates and other digital assests ',
+        image: "CRM.png",
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/Benson-xix/primelabs-digital-template-app",
+        previewUrl: "https://primelabs-digital-template-app.onrender.com/"
     },
 
 ]
