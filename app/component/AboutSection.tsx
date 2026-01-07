@@ -14,6 +14,7 @@ const TAB_DATA = [
                 <li>Node.js</li>
                 <li>Rust</li>
                 <li>C++</li>
+                <li>Rust</li>
                 <li>React</li>
                 <li>Next js</li>
                 <li>Typescript</li>
@@ -21,6 +22,7 @@ const TAB_DATA = [
                 <li>MongoDB</li>
                 <li>Html</li>
                 <li>Css</li>
+                <li>Unreal Engine 5 (BluePrint) </li>
             </ul>
         )
     },
