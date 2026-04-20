@@ -155,7 +155,7 @@ const ProjectSection = () => {
           }}
         >
           A collection of things I've built — from full-stack web apps to
-          polished UI experiences. Each one a story of problem-solving and craft.
+          polished UI experiences. Each one a story of problem-solving and craft, some other Projects are not included here Though to Owner Rights and Securtity, so these are demo Projects
         </p>
       </div>
 

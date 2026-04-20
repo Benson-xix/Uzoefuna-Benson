@@ -149,8 +149,8 @@ const Hero = () => {
           }}
         >
           {[
-            { value: "3+",  label: "Years Experience" },
-            { value: "20+", label: "Projects Built"   },
+            { value: "7+",  label: "Years Experience" },
+            { value: "20+", label: "Projects Built which Includes Admin Systems And Backend Architectures"   },
             { value: "10+", label: "Happy Clients"    },
           ].map((stat) => (
             <div key={stat.label}>
