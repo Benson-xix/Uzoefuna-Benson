@@ -1,79 +1,305 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
 
-
 import Image from 'next/image'
 import Profile from '@/public/IMG_20230611_133246_164.jpg'
 import { TypeAnimation } from 'react-type-animation'
 import Link from 'next/link'
 
-
-
-
 const Hero = () => {
+  return (
+    <section
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "3rem",
+        paddingTop: "2rem",
+        paddingBottom: "5rem",
+        alignItems: "center",
+      }}
+      className="lg:flex-row lg:justify-between lg:items-center"
+    >
+
+     <div style={{ flex: "1 1 0", maxWidth: "600px" }}>
+
+     
+        <div className="animate-fade-up" style={{ marginBottom: "1.5rem" }}>
+          <span className="section-label">Available for work</span>
+        </div>
 
   
+        <h1
+          className="animate-fade-up delay-100"
+          style={{
+            fontFamily: "var(--font-display)",
+            fontWeight: 800,
+            fontSize: "clamp(2.4rem, 5.5vw, 4.5rem)",
+            lineHeight: 1.08,
+            letterSpacing: "-0.03em",
+            marginBottom: "1rem",
+            color: "var(--text-primary)",
+          }}
+        >
+          <span
+            style={{
+              display: "block",
+              fontSize: "clamp(1rem, 2vw, 1.3rem)",
+              fontWeight: 500,
+              letterSpacing: "0.01em",
+              color: "var(--text-secondary)",
+              marginBottom: "0.4rem",
+            }}
+          >
+            Hello, I'm
+          </span>
 
-  return (
-    <section className="flex flex-col lg:flex-row justify-between">
-      <div className='cols-span-7 place-self-center'>
-      <h1 className='text-white lg:text-6xl text-4xl mb-4 font-extrabold '>
-       <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-white"> Hello I'm {" "}</span>
-       <br/>
-       <TypeAnimation
-      sequence={[
-        'Benson',
-        1000,
-        'a Software Engineer',
-        1000,
-        'a Web Developer',
-        1000,
-        'a MERN Stack Developer',
-        1000,
-        'a Full-Stack Developer',
-        1000
-      ]}
-      wrapper="span"
-      speed={50}
-    
-      repeat={Infinity}
-    />
-      </h1>
-       <p className='text-gray-400 text-lg lg:text-xl mb-6  '>
-       Welcome to where Imagination meets Functionality, <span className='text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-500 to-purple-300 text-base md:text-xl'>Let's elevate your brand together through Innovative Design and Development.</span> 
-       </p>
+          <span className="gradient-text" style={{ display: "block" }}>Benson</span>
 
-       <div className="flex gap-4 md:gap-0 ">
+          <span
+            style={{
+              display: "block",
+              minHeight: "1.2em",
+              background: "linear-gradient(90deg, var(--text-primary), var(--accent-blue))",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            <TypeAnimation
+              sequence={[
+                'Software Engineer',    1200,
+                'Game Developer',       1200,
+                'FullStack Developer',  1200,
+              ]}
+              wrapper="span"
+              speed={52}
+              repeat={Infinity}
+              style={{ fontFamily: "var(--font-display)", fontWeight: 300 }}
+              cursor={true}
+            />
+          </span>
 
+        </h1>
 
-        <Link href="/contact" >
-        <button  className="px-6 py-3 rounded-full w-full sm:w-fit  mr-4 bg-gradient-to-br from-orange-500 to-white border-2 border-[#FFA500] text-[#121212] hover:bg-gradient-to-bl hover:from-white hover:to-orange-600 hover:border-2 hover:border-white hover:text-[#121212]">
-        Contact Me
-        </button>
-        </Link>
-
-          <a  href="/Uzoefuna_Benson.pdf" download={true} className='cursor-pointer'>
-          <span className="px-1 py-1 rounded-full  w-full sm:w-fit flex bg-gradient-to-br from-black via-orange-500 to-white text-[#121212] hover:bg-gradient-to-tr hover:from-white hover:via-orange-500 hover:to-black border-2 border-[#FFA500] hover:text-[#121212]">
-            <span className=" bg-[#121212] rounded-full flex items-center gap-3 text-white px-5 py-2 hover:bg-slate-800"> 
-            <p>Download CV</p> 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 mr-2 ">
-            <path fillRule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v11.69l3.22-3.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.22 3.22V3a.75.75 0 0 1 .75-.75Zm-9 13.5a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z" clipRule="evenodd" />
-            </svg>
-            </span> 
-            </span>
-          </a>
       
-       </div>
+        <p
+          className="animate-fade-up delay-200"
+          style={{
+            color: "var(--text-secondary)",
+            fontSize: "clamp(0.95rem, 1.5vw, 1.1rem)",
+            lineHeight: 1.8,
+            marginBottom: "2rem",
+            maxWidth: "480px",
+          }}
+        >
+          Where imagination meets functionality.{" "}
+          <span
+            style={{
+              background: "linear-gradient(90deg, var(--accent-blue), var(--accent-purple), var(--accent-teal))",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+              fontWeight: 500,
+            }}
+          >
+            Let's elevate your brand through innovative design and development.
+          </span>
+        </p>
+
+  
+        <div
+          className="animate-fade-up delay-300"
+          style={{ display: "flex", gap: "0.85rem", flexWrap: "wrap" }}
+        >
+          <Link href="/contact" className="btn btn-primary" style={{ fontSize: "0.9rem" }}>
+            Contact Me
+          </Link>
+
+          <a
+            href="/Uzoefuna_Benson.pdf"
+            download
+            className="btn btn-outline"
+            style={{ fontSize: "0.9rem" }}
+          >
+            Download CV
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              style={{ width: "16px", height: "16px" }}
+            >
+              <path
+                fillRule="evenodd"
+                d="M12 2.25a.75.75 0 0 1 .75.75v11.69l3.22-3.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.22 3.22V3a.75.75 0 0 1 .75-.75Zm-9 13.5a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+
+    
+        <div
+          className="animate-fade-up delay-400"
+          style={{
+            display: "flex",
+            gap: "1.5rem",
+            marginTop: "2.5rem",
+            paddingTop: "2rem",
+            borderTop: "1px solid var(--border-subtle)",
+          }}
+        >
+          {[
+            { value: "3+",  label: "Years Experience" },
+            { value: "20+", label: "Projects Built"   },
+            { value: "10+", label: "Happy Clients"    },
+          ].map((stat) => (
+            <div key={stat.label}>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "1.5rem",
+                  fontWeight: 800,
+                  background: "linear-gradient(135deg, var(--accent-blue), var(--accent-purple))",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  lineHeight: 1,
+                  marginBottom: "0.2rem",
+                }}
+              >
+                {stat.value}
+              </p>
+              <p
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: "0.68rem",
+                  color: "var(--text-muted)",
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                }}
+              >
+                {stat.label}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="col-span-5 place-self-center md:mt-4 mt-8 lg:mt-0 ">
-       <div className="rounded-full bg-[#181818] relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] ">
-       <Image className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src={Profile} alt={'profile-Image'} width={250} height={300}></Image>
-       </div>
+   
+      <div
+        className="animate-fade-in delay-200"
+        style={{
+          position: "relative",
+          flexShrink: 0,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+       
+        <div
+          style={{
+            position: "absolute",
+            width: "320px",
+            height: "320px",
+            borderRadius: "9999px",
+            background: "conic-gradient(from 0deg, var(--accent-blue), var(--accent-purple), var(--accent-teal), var(--accent-blue))",
+            animation: "spin-slow 8s linear infinite",
+            opacity: 0.5,
+          }}
+          className="lg:w-[460px] lg:h-[460px]"
+        />
+
+ 
+        <div
+          style={{
+            position: "absolute",
+            width: "310px",
+            height: "310px",
+            borderRadius: "9999px",
+            background: "var(--bg-base)",
+          }}
+          className="lg:w-[448px] lg:h-[448px]"
+        />
+
+    
+        <div
+          style={{
+            position: "relative",
+            width: "290px",
+            height: "290px",
+            borderRadius: "9999px",
+            overflow: "hidden",
+            border: "1px solid var(--border-default)",
+            background: "var(--bg-elevated)",
+            zIndex: 1,
+          }}
+          className="lg:w-[420px] lg:h-[420px]"
+        >
+          <Image
+            src={Profile}
+            alt="Uzoefuna Benson — profile photo"
+            fill
+            style={{ objectFit: "cover", objectPosition: "top center" }}
+            priority
+            sizes="(max-width: 1024px) 290px, 420px"
+          />
+        </div>
+
+     
+        <div
+          style={{
+            position: "absolute",
+            bottom: "10px",
+            right: "0px",
+            background: "var(--bg-elevated)",
+            border: "1px solid var(--border-default)",
+            borderRadius: "12px",
+            padding: "0.6rem 0.9rem",
+            display: "flex",
+            alignItems: "center",
+            gap: "0.5rem",
+            zIndex: 2,
+            backdropFilter: "blur(12px)",
+            boxShadow: "var(--glow-blue)",
+          }}
+        >
+          <span
+            style={{
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              background: "var(--accent-teal)",
+              boxShadow: "0 0 8px var(--accent-teal)",
+              flexShrink: 0,
+              animation: "pulse-dot 2s ease-in-out infinite",
+            }}
+          />
+          <span
+            style={{
+              fontFamily: "var(--font-mono)",
+              fontSize: "0.7rem",
+              color: "var(--text-secondary)",
+              letterSpacing: "0.04em",
+            }}
+          >
+            Open to opportunities
+          </span>
+        </div>
+
+        <style jsx>{`
+          @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+          }
+          @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50%       { opacity: 0.6; transform: scale(0.85); }
+          }
+        `}</style>
       </div>
     </section>
   )
 }
 
 export default Hero
-

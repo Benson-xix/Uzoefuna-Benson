@@ -1,21 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Syne, Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const syne = Syne({
+  variable: "--font-syne",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
-  title: 'Uzoefuna Benson',
-  description: 'A Portfolio Web-App for Uzoefuna Benson',
-  keywords: ["Development", "Web", "Software Development", "Programming" , "Benson", "Uzoefuna", "chijioke", "tech","javascript", "Work", "Skill"]
+  title: "Uzoefuna Benson — Developer & Creator",
+  description: "Portfolio of Uzoefuna Benson — Software Developer crafting modern web experiences.",
+  keywords: [
+    "Development", "Web", "Software Development", "Programming",
+    "Benson", "Uzoefuna", "Chijioke", "Tech", "JavaScript",
+    "Work", "Skill", "Portfolio",
+  ],
+  openGraph: {
+    title: "Uzoefuna Benson — Developer & Creator",
+    description: "Portfolio of Uzoefuna Benson — Software Developer crafting modern web experiences.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -24,10 +35,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${syne.variable} ${spaceMono.variable} antialiased`}
       >
+        {/* Ambient background glow blobs */}
+        <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+          <div className="glow-blob glow-blob--blue" />
+          <div className="glow-blob glow-blob--purple" />
+          <div className="glow-blob glow-blob--teal" />
+          <div className="grid-overlay" />
+        </div>
+
         {children}
       </body>
     </html>
