@@ -131,6 +131,7 @@ const TAB_DATA = [
           { label: "Advanced Software Engineering", color: "var(--accent-purple)" },
           { label: "Full-Stack Developer",          color: "var(--accent-teal)"   },
           { label: "Web Developer",                 color: "var(--accent-blue)"   },
+          {label: "Game Developer",                color: "var(--accent-purple)"},  
         ].map((cert, i) => (
           <div
             key={i}
