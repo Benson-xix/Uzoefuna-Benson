@@ -274,9 +274,9 @@ const AboutSection = () => {
               lineHeight: 1.85,
             }}
           >
-            I'm a full-stack web developer with a passion for building interactive,
-            responsive, and performant web applications. I work across the stack —
-            from crafting pixel-perfect UIs to architecting scalable backends.
+            I'm a Software Engineer with a passion for building interactive,
+            responsive, and performant web applications, softwares and games. I work across the stack —
+            from crafting pixel-perfect UIs to architecting scalable backends and also building indie games.
             <br /><br />
             Always learning, always building. I thrive in collaborative environments
             and love turning complex problems into elegant digital solutions.
